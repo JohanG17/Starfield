@@ -2,6 +2,7 @@ Particle[] parts = new Particle[1000];
 void setup()
 {
   size(500,500);
+  frameRate(20);
   for(int i = 0; i < parts.length;i++){
    parts[i] = new Particle();
    parts[0] = new OddballParticle();
@@ -43,7 +44,7 @@ class OddballParticle extends Particle//inherits from Particle
 {
   OddballParticle()
  { 
-   myX = Math.random()*200;
+   myX = Math.random()*100;
    //myY = Math.random()*200;
    //myX=0;
    myY=225;
